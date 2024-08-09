@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="mobile-menu">
+                <a href=""><img  id="logo" src="img/ERATUR-logo-yeni1.png" alt=""></a>
+                <a class="fa-solid fa-bars-staggered" onclick="burgerMenu()"></a>
+            </div>
+            <div class="desktop-menu">
+                <a href=""><img  id="logo" src="img/ERATUR-logo-yeni1.png" alt=""></a>
+                <ul id="menu">
+                    <li class="dropdown">
+                        <a href="">Şirkət</a>
+                        <ul class="dropdown-content">
+                            <li class="empty"></li>
+                            <li><a href="" >Haqqımızda</a></li>
+                            <li><a href="" >Sertifikatlar</a></li>
+                            <li><a href="">Karyera</a></li>
+                            <li class="empty"></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="">Müştəri rəyləri</a>
+                        <ul class="dropdown-content">
+                            <li class="empty"></li>
+                            <li><a href="" >Müştəri fikirləri</a></li>
+                            <li><a href="" >Səyahət görüntüləri</a></li>
+                            <li class="empty"></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="">Turlar</a>
+                        <ul class="dropdown-content">
+                            <li class="empty"></li>
+                            <li><a href="" >Daxili turlar</a></li>
+                            <li><a href="" >Xarici turlar</a></li>
+                            <li><a href="" >İnfoturlar</a></li>
+                            <li><a href="" >İnsentiv turlar</a></li>
+                            <li><a href="" >Qrup turları</a></li>
+                            <li><a href="" >Ekskursiyalar</a></li>
+                            <li class="empty"></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="">Xidmətlər</a></li>
+                    <li class="dropdown">
+                        <a href="">Əməkdaşlıq</a>
+                        <ul class="dropdown-content">
+                            <li class="empty"></li>
+                            <li><a href="" >Avia Şirkətlər</a></li>
+                            <li><a href="" >Korporativ əməkdaşlıq</a></li>
+                            <li class="empty"></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="">Azərbaycanı Kəşf Et</a></li>
+                    <li class="dropdown"><a href="">Əlaqə</a></li>
+                </ul>
+                <div id="addons">
+                   <ul id="langs">
+                        <li>
+                            <img src="img/az1.png"> <span>AZ</span> 
+                            <ul class="flag">
+                                <li><img src="img/ukFlag.png"> <span>UK</span></li>
+                                <li><img src="img/russianflag.png"> <span>RU</span></li>
+                            </ul>
+                        </li>
+                   </ul>
+                   <div id="phone">
+                        <img src="img/svg.svg">
+                        <span> (+99455) 597-05-14</span>
+                    </div>
+                </div>
+            </div>
+            <div class="burger">
+                <i class="fa-solid fa-xmark" onclick="burgerMenu()"></i>
+                <a href=""><img  id="logo" src="img/ERATUR-logo-yeni1.png" alt=""></a>
+                <ul id="burgerMenu">
+                    <li class="burger-drop" onclick="ac(event)">
+                        <a href="">Şirkət<sub class="arrow">⇲</sub></a>
+                        <ul class="open">
+                            <li><a href="">Haqqımızda</a></li>
+                            <li><a href="">Sertifikatlar</a></li>
+                            <li><a href="">Karyera</a></li>
+                        </ul>
+                    </li>
+                    <li  class="burger-drop" onclick="ac(event)">
+                        <a href="">Müştəri rəyləri<sub class="arrow">⇲</sub></a>
+                        <ul class="open">
+                            <li><a href="" >Müştəri fikirləri</a></li>
+                            <li><a href="" >Səyahət görüntüləri</a></li>
+                        </ul>
+                    </li>
+                    <li  class="burger-drop" onclick="ac(event)">
+                        <a href="">Turlar<sub class="arrow">⇲</sub></a>
+                        <ul class="open">
+                            <li><a href="" >Daxili turlar</a></li>
+                            <li><a href="" >Xarici turlar</a></li>
+                            <li><a href="" >İnfoturlar</a></li>
+                            <li><a href="" >İnsentiv turlar</a></li>
+                            <li><a href="" >Qrup turları</a></li>
+                            <li><a href="" >Ekskursiyalar</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Xidmətlər</a>
+                    </li>
+                    <li class="burger-drop" onclick="ac(event)"> 
+                        <a href="">Əməkdaşlıq<sub class="arrow">⇲</sub></a>
+                        <ul class="open">
+                            <li><a href="" >Avia Şirkətlər</a></li>
+                            <li><a href="" >Korporativ əməkdaşlıq</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Azərbaycanı Kəşf Et</a>
+                    </li>
+                    <li>
+                        <a href="">Əlaqə</a>
+                    </li>
+                </ul>
+                <button>Qiymət təklifi al</button>
+                <div id="icons">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div id="languages">
+                    <div>
+                        <img src="img/az1.png"> <span>az</span>
+                    </div>
+                    <div>
+                        <img src="img/ukFlag.png"> <span>en</span>
+                    </div>
+                    <div>
+                        <img src="img/russianflag.png"> <span>ru</span>
+                    </div>
+               </div>
+                
+                
+            </div>
+        </nav>
+    </header>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
